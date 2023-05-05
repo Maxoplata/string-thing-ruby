@@ -4,7 +4,7 @@ StringThing is a lightweight library for encoding and decoding strings using var
 
 ## Installation
 
-WebSocket Ruby has no external dependencies, so it can be installed from source or directly from rubygems:
+StringThing has no external dependencies, so it can be installed from source or directly from rubygems:
 
 ```sh
 gem install "string_thing"

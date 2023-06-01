@@ -63,7 +63,7 @@ require 'string_thing'
 
 myStringThing1 = StringThing.new(['split-halves', 'shift', 'reverse', 'shift', 'swap-case', 'rotate'])
 
-// OR
+# OR
 
 stringThingPattern = ['split-halves', 'shift', 'reverse', 'shift', 'swap-case', 'rotate']
 myStringThing2 = StringThing.new(stringThingPattern)
@@ -128,7 +128,7 @@ passwordAttempt = 'myPassword123'
 encodedPasswordAttempt = StringThing.new(stringThingPattern).encode(passwordAttempt)
 
 # Hash the encoded password attempt with bcrypt
-hashedPasswordAttempt = BCrypt::Engine.hash_secret(encodedPassword, salt, cost: 12)
+hashedPasswordAttempt = BCrypt::Engine.hash_secret(encodedPasswordAttempt, salt, cost: 12)
 
 # Compare the hashed password attempt to the stored hashed password
 if (hashedPasswordAttempt == hashedPassword)
